@@ -1,38 +1,72 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 10px;
+  margin: auto;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+  margin: 10px auto;
+  width: 200px;
+  padding: 10px;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(159, 169, 223, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+p {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+img {
+  width: auto;
+  height: 200px;
+  max-width: 200px;
 }
+input {
+  padding: 5px;
+  width: 240px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: 1ps solid gray;
+}
+.search button {
+  padding: 5px;
+  width: 100px;
+  background-color: #3ba5f7;
+  color: white;
+  border: 2px solid #3ba5f7;
+  margin-left: 2px;
+}
+.filter {
+  padding: 20px 5px;
+}
+.filter button {
+  width: 140px;
+  padding: 5px;
+  color: white;
+  margin: auto 5px;
+}
+#shortlist {
+  width: 140px;
+  padding: 5px;
+  color: white;
+  margin: auto 5px;
+}
+.back {
+  padding: 5px;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+}
+.detailWrapper {
+  width: 300px;
+  margin: 20px auto;
+  padding: 10px;
+  backdrop-filter: blur(10px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(159, 169, 223, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
 }
