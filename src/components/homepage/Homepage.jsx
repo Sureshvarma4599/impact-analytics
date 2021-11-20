@@ -80,7 +80,7 @@ export default function Homepage() {
               </div>
             ))
           ) : (
-            <div />
+            <h2>oops no data found...</h2>
           )}
         </div>
       </div>
